@@ -1,4 +1,4 @@
-package org.dbpedia.convert.api
+package org.dbpedia.convert.utils
 
 object Constants {
   val CONFIG_DIR: String = "application.conf"
