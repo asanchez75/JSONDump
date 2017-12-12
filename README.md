@@ -9,8 +9,8 @@ Core to generate a single json dump for a DBpedia release
 
 ## Running JSONDump
 1. Update configuration in conf/application.conf
-  * Update **app.data.input** to set input file path
-  * Update **app.data.output** to set output directory
+   * Update **app.data.input** to set input file path
+   * Update **app.data.output** to set output directory
 2. Use the following command to run JSONDump
   ```
  ./run.sh
