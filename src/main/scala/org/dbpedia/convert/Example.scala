@@ -13,7 +13,7 @@ object Example {
     val sc = new SparkContext(conf)
     // Load our input data.
     val input =  sc.textFile(Configuration.inputFile)
-    input
+
     input
       //Sort all lines as strings
       //.sortBy(s => s)
@@ -36,7 +36,7 @@ object Example {
       .groupBy(_.subject)
       .map ( vals => jsonValsToJson(vals._1, vals._2))
 
-      .saveAsTextFile("/home/dimitris/data/dbpedia/export.jsonl")
+      .saveAsTextFile(Configuration.outputFile)
 
 
   }
