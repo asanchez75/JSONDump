@@ -35,7 +35,8 @@ object Example {
       .sortBy(_.subject)
       .groupBy(_.subject)
       .map ( vals => jsonValsToJson(vals._1, vals._2))
-
+      // save to a single file
+      .coalesce(1,true)
       .saveAsTextFile(Configuration.outputFile)
 
 
