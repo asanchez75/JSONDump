@@ -60,5 +60,5 @@ see http://downloads.dbpedia.org/temporary/jsondump/ for an experimental jsonl 2
 
 ## Maintainers
 
-* Dimitris Kontokostas [@jimkont](https://github.com/jimkont)
 * Ryan Sequeira [@seqryan](https://github.com/seqryan)
+* Dimitris Kontokostas [@jimkont](https://github.com/jimkont)
