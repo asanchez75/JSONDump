@@ -40,6 +40,10 @@ At the moment, the code is generic and can work with any N-Triple files.
 
 Use the Github issue tracker to submit any issues and Pull Requests are more that welcome ;)
 
+## Experimental DBpedia 2016-10 release
+
+see http://downloads.dbpedia.org/temporary/jsondump/ for an experimental jsonl 2016-10 release
+
 ## Prerequisites 
 * Install Spark and set SPARK_HOME environment variable
 
