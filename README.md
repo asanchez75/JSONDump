@@ -6,8 +6,8 @@ Core to generate a single json dump for a DBpedia release
 
 ## Description
 
-given a set of N-Quad / N-Triple files, this script uses spark to read all files as an RDD and process them.
-It generates one json entry per resource that contains all the property / value pairs from the triples with this resource as a subject and save it in one line.
+Given a set of N-Quad / N-Triple files, this script uses spark to read all files as an RDD and processes them.
+For every subject in all RDF files, it generates a one-line JSON.
 
 Example input:
 ```
@@ -29,9 +29,9 @@ Example output:
 {"@id":"http://wikidata.dbpedia.org/resource/Q53619","subject":["http://wikidata.dbpedia.org/resource/Q10011322","http://wikidata.dbpedia.org/resource/Q10011710","http://wikidata.dbpedia.org/resource/Q10011866","http://wikidata.dbpedia.org/resource/Q10081503","http://wikidata.dbpedia.org/resource/Q10081526"]}
 ```
 
-For every predicate - object pair for an RDF triple
-we generate JSON key-value pairs using the `local name` of the predicate IRI as key and the lexical value of the object as value(s).
-The subject is denoted with `@id`.
+The subject is denoted with `@id` and we generate JSON key/value pairs for all the RDF triples with the resource as subject.
+The values as grouped by predicate and we use the `local name` of the predicate IRI as key.
+We use the lexical form of the object(s) of the triple as value(s).
 
 The goal is to make the code aligned with JSON-LD, auto-prefixing IRIs and generating the appropriate `@context` based on the files it processes (or using a predefined context)
 At the moment, the code is generic and can work with any N-Triple files.
