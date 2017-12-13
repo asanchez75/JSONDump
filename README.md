@@ -4,6 +4,8 @@
 
 Core to generate a single json dump for a DBpedia release
 
+## Description
+
 given a set of N-Quad / N-Triple files, this script uses spark to read all files as an RDD and process them.
 It generates one json entry per resource that contains all the property / value pairs from the triples with this resource as a subject and save it in one line.
 
@@ -50,9 +52,6 @@ Use the Github issue tracker to submit any issues and Pull Requests are more tha
  ./run.sh
   ```
   You can update`run.sh` to change spark submit arguments.
-
-## Example input / output
-
 
 
 ## Maintainers
