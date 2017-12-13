@@ -33,12 +33,14 @@ The subject is denoted with `@id` and we generate JSON key/value pairs for all t
 The values as grouped by predicate and we use the `local name` of the predicate IRI as key.
 We use the lexical form of the object(s) of the triple as value(s).
 
-The goal is to make the code aligned with JSON-LD, auto-prefixing IRIs and generating the appropriate `@context` based on the files it processes (or using a predefined context)
+The goal is to make the code aligned with JSON-LD, auto-prefixing IRIs and generating the appropriate `@context` based on the files it processes (or using a predefined context).
 At the moment, the code is generic and can work with any N-Triple files.
 
 `N-Quads` are supported from the parser but the algorithm ignores the graph IRI.
 
 Use the Github issue tracker to submit any issues and Pull Requests are more that welcome ;)
+
+This project was inspired by @joernhees 's [gist](https://gist.github.com/joernhees/5f00020fbaff86d2e59efa15bae0af28#file-dbpedia_json_extractor-ipynb)
 
 ## Experimental DBpedia 2016-10 release
 
